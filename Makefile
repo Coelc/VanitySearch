@@ -72,8 +72,8 @@ $(OBJDIR)/%.o : %.cpp
 all: VanitySearch
 
 VanitySearch: $(OBJET)
-	@echo Making VanitySearch...
-	$(CXX) $(OBJET) $(LFLAGS) -o VanitySearch
+	@echo Making test...
+	$(CXX) $(OBJET) $(LFLAGS) -o test
 
 $(OBJET): | $(OBJDIR) $(OBJDIR)/GPU $(OBJDIR)/hash
 
