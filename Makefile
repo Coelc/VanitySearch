@@ -15,7 +15,7 @@ ifdef gpu
 
 OBJET = $(addprefix $(OBJDIR)/, \
         Base58.o IntGroup.o main.o Random.o Timer.o Int.o \
-        IntMod.o Point.o SECP256K1.o Vanity.o GPU/GPUGenerate.o \
+        IntMod.o Point.o SECP256K1.o test.o GPU/GPUGenerate.o \
         hash/ripemd160.o hash/sha256.o hash/sha512.o \
         hash/ripemd160_sse.o hash/sha256_sse.o \
         GPU/GPUEngine.o Bech32.o Wildcard.o)
@@ -24,7 +24,7 @@ else
 
 OBJET = $(addprefix $(OBJDIR)/, \
         Base58.o IntGroup.o main.o Random.o Timer.o Int.o \
-        IntMod.o Point.o SECP256K1.o Vanity.o GPU/GPUGenerate.o \
+        IntMod.o Point.o SECP256K1.o test.o GPU/GPUGenerate.o \
         hash/ripemd160.o hash/sha256.o hash/sha512.o \
         hash/ripemd160_sse.o hash/sha256_sse.o Bech32.o Wildcard.o)
 
